@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class opaqBrowser
-    Inherits System.Windows.Forms.Form
+Partial Class Form1
+    Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -22,47 +22,96 @@ Partial Class opaqBrowser
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(opaqBrowser))
-        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
-        Me.stripMenu = New System.Windows.Forms.ToolStripMenuItem()
-        Me.stripMenuHomepage_Set = New System.Windows.Forms.ToolStripMenuItem()
-        Me.stripMenuHomepage_Reset = New System.Windows.Forms.ToolStripMenuItem()
-        Me.stripMenuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
-        Me.addressBar = New System.Windows.Forms.TextBox()
-        Me.buttonBack = New System.Windows.Forms.Button()
-        Me.buttonForward = New System.Windows.Forms.Button()
-        Me.buttonHome = New System.Windows.Forms.Button()
         Me.opacityBar = New System.Windows.Forms.TrackBar()
         Me.theBrowser = New System.Windows.Forms.WebBrowser()
+        Me.addressBar = New System.Windows.Forms.TextBox()
+        Me.stripMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.stripMenuHomepage_Set = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CurrentPageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CustomPageToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.stripMenuHomepage_Reset = New System.Windows.Forms.ToolStripMenuItem()
+        Me.stripMenuExit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.buttonHome = New System.Windows.Forms.Button()
         Me.buttonGo = New System.Windows.Forms.Button()
-        Me.MenuStrip2.SuspendLayout()
+        Me.buttonForward = New System.Windows.Forms.Button()
+        Me.buttonBack = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.opacityBar, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
-        'MenuStrip2
+        'StatusStrip1
         '
-        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.stripMenu})
-        Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(757, 24)
-        Me.MenuStrip2.TabIndex = 4
-        Me.MenuStrip2.Text = "MenuStrip2"
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
+        Me.StatusStrip1.Location = New System.Drawing.Point(20, 470)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(995, 22)
+        Me.StatusStrip1.TabIndex = 5
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(94, 17)
+        Me.ToolStripStatusLabel1.Text = "OpaQ Proto v1.0"
+        '
+        'opacityBar
+        '
+        Me.opacityBar.AutoSize = False
+        Me.opacityBar.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.opacityBar.Location = New System.Drawing.Point(20, 443)
+        Me.opacityBar.Maximum = 20
+        Me.opacityBar.Name = "opacityBar"
+        Me.opacityBar.Size = New System.Drawing.Size(995, 27)
+        Me.opacityBar.TabIndex = 10
+        Me.opacityBar.Value = 20
+        '
+        'theBrowser
+        '
+        Me.theBrowser.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.theBrowser.Location = New System.Drawing.Point(20, 121)
+        Me.theBrowser.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.theBrowser.Name = "theBrowser"
+        Me.theBrowser.Size = New System.Drawing.Size(995, 322)
+        Me.theBrowser.TabIndex = 11
+        '
+        'addressBar
+        '
+        Me.addressBar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.addressBar.Location = New System.Drawing.Point(20, 101)
+        Me.addressBar.Name = "addressBar"
+        Me.addressBar.Size = New System.Drawing.Size(995, 20)
+        Me.addressBar.TabIndex = 6
         '
         'stripMenu
         '
         Me.stripMenu.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.stripMenuHomepage_Set, Me.stripMenuHomepage_Reset, Me.stripMenuExit})
         Me.stripMenu.Name = "stripMenu"
-        Me.stripMenu.Size = New System.Drawing.Size(37, 20)
+        Me.stripMenu.Size = New System.Drawing.Size(37, 37)
         Me.stripMenu.Text = "File"
         '
         'stripMenuHomepage_Set
         '
+        Me.stripMenuHomepage_Set.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CurrentPageToolStripMenuItem, Me.CustomPageToolStripMenuItem})
         Me.stripMenuHomepage_Set.Name = "stripMenuHomepage_Set"
         Me.stripMenuHomepage_Set.Size = New System.Drawing.Size(164, 22)
         Me.stripMenuHomepage_Set.Text = "Set Homepage"
+        '
+        'CurrentPageToolStripMenuItem
+        '
+        Me.CurrentPageToolStripMenuItem.Name = "CurrentPageToolStripMenuItem"
+        Me.CurrentPageToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.CurrentPageToolStripMenuItem.Text = "Current Page"
+        '
+        'CustomPageToolStripMenuItem
+        '
+        Me.CustomPageToolStripMenuItem.Name = "CustomPageToolStripMenuItem"
+        Me.CustomPageToolStripMenuItem.Size = New System.Drawing.Size(154, 22)
+        Me.CustomPageToolStripMenuItem.Text = "Custom Page..."
         '
         'stripMenuHomepage_Reset
         '
@@ -76,89 +125,61 @@ Partial Class opaqBrowser
         Me.stripMenuExit.Size = New System.Drawing.Size(164, 22)
         Me.stripMenuExit.Text = "Exit"
         '
-        'StatusStrip1
+        'MenuStrip2
         '
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 490)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(757, 22)
-        Me.StatusStrip1.TabIndex = 5
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'ToolStripStatusLabel1
-        '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(94, 17)
-        Me.ToolStripStatusLabel1.Text = "OpaQ Proto v1.0"
-        '
-        'addressBar
-        '
-        Me.addressBar.Location = New System.Drawing.Point(106, 1)
-        Me.addressBar.Name = "addressBar"
-        Me.addressBar.Size = New System.Drawing.Size(227, 20)
-        Me.addressBar.TabIndex = 6
-        '
-        'buttonBack
-        '
-        Me.buttonBack.Location = New System.Drawing.Point(368, 0)
-        Me.buttonBack.Name = "buttonBack"
-        Me.buttonBack.Size = New System.Drawing.Size(22, 23)
-        Me.buttonBack.TabIndex = 7
-        Me.buttonBack.Text = "<"
-        Me.buttonBack.UseVisualStyleBackColor = True
-        '
-        'buttonForward
-        '
-        Me.buttonForward.Location = New System.Drawing.Point(390, 0)
-        Me.buttonForward.Name = "buttonForward"
-        Me.buttonForward.Size = New System.Drawing.Size(22, 23)
-        Me.buttonForward.TabIndex = 8
-        Me.buttonForward.Text = ">"
-        Me.buttonForward.UseVisualStyleBackColor = True
+        Me.MenuStrip2.AutoSize = False
+        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.stripMenu})
+        Me.MenuStrip2.Location = New System.Drawing.Point(20, 60)
+        Me.MenuStrip2.Name = "MenuStrip2"
+        Me.MenuStrip2.Size = New System.Drawing.Size(995, 41)
+        Me.MenuStrip2.TabIndex = 4
+        Me.MenuStrip2.Text = "MenuStrip2"
         '
         'buttonHome
         '
-        Me.buttonHome.Location = New System.Drawing.Point(49, 0)
+        Me.buttonHome.Location = New System.Drawing.Point(63, 63)
         Me.buttonHome.Name = "buttonHome"
-        Me.buttonHome.Size = New System.Drawing.Size(51, 23)
+        Me.buttonHome.Size = New System.Drawing.Size(51, 35)
         Me.buttonHome.TabIndex = 9
         Me.buttonHome.Text = "Home"
         Me.buttonHome.UseVisualStyleBackColor = True
         '
-        'opacityBar
-        '
-        Me.opacityBar.AutoSize = False
-        Me.opacityBar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.opacityBar.Location = New System.Drawing.Point(0, 463)
-        Me.opacityBar.Maximum = 20
-        Me.opacityBar.Name = "opacityBar"
-        Me.opacityBar.Size = New System.Drawing.Size(757, 27)
-        Me.opacityBar.TabIndex = 10
-        Me.opacityBar.Value = 20
-        '
-        'theBrowser
-        '
-        Me.theBrowser.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.theBrowser.Location = New System.Drawing.Point(0, 24)
-        Me.theBrowser.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.theBrowser.Name = "theBrowser"
-        Me.theBrowser.Size = New System.Drawing.Size(757, 439)
-        Me.theBrowser.TabIndex = 11
-        '
         'buttonGo
         '
-        Me.buttonGo.Location = New System.Drawing.Point(334, 0)
+        Me.buttonGo.Location = New System.Drawing.Point(120, 64)
         Me.buttonGo.Name = "buttonGo"
-        Me.buttonGo.Size = New System.Drawing.Size(34, 23)
+        Me.buttonGo.Size = New System.Drawing.Size(57, 34)
         Me.buttonGo.TabIndex = 12
         Me.buttonGo.Text = "Go"
         Me.buttonGo.UseVisualStyleBackColor = True
         '
-        'opaqBrowser
+        'buttonForward
+        '
+        Me.buttonForward.BackgroundImage = Global.OpaQBrowser.My.Resources.Resources.forward1
+        Me.buttonForward.FlatAppearance.BorderSize = 0
+        Me.buttonForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.buttonForward.Location = New System.Drawing.Point(975, 55)
+        Me.buttonForward.Name = "buttonForward"
+        Me.buttonForward.Size = New System.Drawing.Size(40, 40)
+        Me.buttonForward.TabIndex = 8
+        Me.buttonForward.UseVisualStyleBackColor = True
+        '
+        'buttonBack
+        '
+        Me.buttonBack.BackgroundImage = Global.OpaQBrowser.My.Resources.Resources.back1
+        Me.buttonBack.FlatAppearance.BorderSize = 0
+        Me.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.buttonBack.Location = New System.Drawing.Point(929, 55)
+        Me.buttonBack.Name = "buttonBack"
+        Me.buttonBack.Size = New System.Drawing.Size(40, 40)
+        Me.buttonBack.TabIndex = 7
+        Me.buttonBack.UseVisualStyleBackColor = True
+        '
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(757, 512)
+        Me.ClientSize = New System.Drawing.Size(1035, 512)
         Me.Controls.Add(Me.buttonGo)
         Me.Controls.Add(Me.theBrowser)
         Me.Controls.Add(Me.opacityBar)
@@ -169,29 +190,32 @@ Partial Class opaqBrowser
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Name = "opaqBrowser"
+        Me.Name = "Form1"
+        Me.Tag = ""
         Me.Text = "OpaQ - The Opaque Browser"
-        Me.MenuStrip2.ResumeLayout(False)
-        Me.MenuStrip2.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         CType(Me.opacityBar, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip2.ResumeLayout(False)
+        Me.MenuStrip2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MenuStrip2 As MenuStrip
-    Friend WithEvents stripMenu As ToolStripMenuItem
-    Friend WithEvents stripMenuHomepage_Set As ToolStripMenuItem
     Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents stripMenuHomepage_Reset As ToolStripMenuItem
-    Friend WithEvents stripMenuExit As ToolStripMenuItem
     Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
-    Friend WithEvents addressBar As TextBox
+    Friend WithEvents opacityBar As TrackBar
     Friend WithEvents buttonBack As Button
     Friend WithEvents buttonForward As Button
-    Friend WithEvents buttonHome As Button
-    Friend WithEvents opacityBar As TrackBar
     Friend WithEvents theBrowser As WebBrowser
+    Friend WithEvents addressBar As TextBox
+    Friend WithEvents stripMenu As ToolStripMenuItem
+    Friend WithEvents stripMenuHomepage_Set As ToolStripMenuItem
+    Friend WithEvents CurrentPageToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CustomPageToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents stripMenuHomepage_Reset As ToolStripMenuItem
+    Friend WithEvents stripMenuExit As ToolStripMenuItem
+    Friend WithEvents MenuStrip2 As MenuStrip
+    Friend WithEvents buttonHome As Button
     Friend WithEvents buttonGo As Button
 End Class

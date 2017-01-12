@@ -1,4 +1,8 @@
-﻿Public Class opaqBrowser
+﻿Public Class Form1
+
+    Private Sub opaqBrowser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 
     Private Sub opacityBar_Scroll(sender As Object, e As EventArgs) Handles opacityBar.Scroll
 
@@ -36,7 +40,7 @@
     Private Sub buttonHome_Click(sender As Object, e As EventArgs) Handles buttonHome.Click
 
         'Go to Homepage
-        theBrowser.GoHome()
+        theBrowser.Navigate(My.Settings.Home)
 
     End Sub
 
@@ -48,4 +52,23 @@
         End If
 
     End Sub
+
+    Private Sub CurrentPageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CurrentPageToolStripMenuItem.Click
+
+        'Change Homepage to Address Bar Value
+        My.Settings.Home = addressBar.Text
+        My.Settings.Save()
+
+    End Sub
+
+    Private Sub CustomPageToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CustomPageToolStripMenuItem.Click
+
+        'Ask user to input name/URL of new Homepage
+        Dim response As Object
+        response = InputBox("Please Enter Home Page URL", "Webbrowser", My.Settings.Home)
+        My.Settings.Home = response
+        My.Settings.Save()
+
+    End Sub
+
 End Class
