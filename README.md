@@ -1,6 +1,6 @@
 ![alt tag](http://i.imgur.com/gzL7Oh7.png)
 
-# The Truely Useless Innovation
+# The Truly Useless Innovation
 Handy Web-Browsing Tool for Multitasking
 
 OpaQ was a quick tool I designed that allows quick and easy interaction with the Opacity value of a web browser. This allows
