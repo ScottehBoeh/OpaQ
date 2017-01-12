@@ -134,7 +134,7 @@ Partial Class opaqBrowser
         Me.opacityBar.Name = "opacityBar"
         Me.opacityBar.Size = New System.Drawing.Size(757, 27)
         Me.opacityBar.TabIndex = 10
-        Me.opacityBar.Value = 6
+        Me.opacityBar.Value = 20
         '
         'theBrowser
         '
