@@ -1,4 +1,4 @@
-![alt tag](http://i.imgur.com/85B5Cwk.png)
+![alt tag](http://i.imgur.com/gzL7Oh7.png)
 
 # The Truely Useless Innovation
 Handy Web-Browsing Tool for Multitasking
@@ -11,11 +11,13 @@ Forward and Sethome.
 Short Tutorial:
 Using this program is reletively simple. It acts like a normal browser but contains an additional slide-tracker for changing
 the opacity of the window:
-![alt tag](http://i.imgur.com/Ij7UVqg.png)
+
+![alt tag](http://i.imgur.com/r67Sm0O.png)
 
 Disclaimer:
 Updates to this project may be slow and somewhat careless. This is just a small project that I am working on.
 
 Download Here:
+
 https://drive.google.com/file/d/0BxiJpyg6akOpR21FbGpUS1hUaUk/view?usp=sharing
 (Google-drive is a trusted host for Files and Executables.)
