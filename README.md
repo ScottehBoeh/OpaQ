@@ -15,3 +15,7 @@ the opacity of the window:
 
 Disclaimer:
 Updates to this project may be slow and somewhat careless. This is just a small project that I am working on.
+
+Download Here:
+https://drive.google.com/file/d/0BxiJpyg6akOpR21FbGpUS1hUaUk/view?usp=sharing
+(Google-drive is a trusted host for Files and Executables.)
