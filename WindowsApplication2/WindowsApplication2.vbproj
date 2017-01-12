@@ -67,7 +67,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>OpaQIconSmall.ico</ApplicationIcon>
+    <ApplicationIcon>OpaQIcon.png.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>E22D41A2D55BF6DC31D243C2F5A5697AA7D9A9CB</ManifestCertificateThumbprint>
@@ -181,7 +181,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MetroFramework.txt" />
+    <Content Include="OpaQIcon.png.ico" />
     <Content Include="OpaQIconSmall.ico" />
+    <None Include="Resources\OpaQLogo2.png" />
+    <None Include="Resources\home.png" />
     <None Include="Resources\forward1.png" />
     <None Include="Resources\back1.png" />
     <None Include="Resources\forward.png" />

@@ -44,7 +44,7 @@
 
     End Sub
 
-    Private Sub buttonGo_Click(sender As Object, e As EventArgs) Handles buttonGo.Click
+    Private Sub buttonGo_Click(sender As Object, e As EventArgs)
 
         'Navigate to newly entered Text (If Textbox has Value)
         If (addressBar.Text IsNot "") Then

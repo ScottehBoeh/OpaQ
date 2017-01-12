@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits MetroFramework.Forms.MetroForm
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
@@ -35,17 +35,19 @@ Partial Class Form1
         Me.stripMenuHomepage_Reset = New System.Windows.Forms.ToolStripMenuItem()
         Me.stripMenuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.buttonHome = New System.Windows.Forms.Button()
-        Me.buttonGo = New System.Windows.Forms.Button()
         Me.buttonForward = New System.Windows.Forms.Button()
         Me.buttonBack = New System.Windows.Forms.Button()
         Me.StatusStrip1.SuspendLayout()
         CType(Me.opacityBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip2.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StatusStrip1
         '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.Transparent
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
         Me.StatusStrip1.Location = New System.Drawing.Point(20, 470)
         Me.StatusStrip1.Name = "StatusStrip1"
@@ -128,6 +130,8 @@ Partial Class Form1
         'MenuStrip2
         '
         Me.MenuStrip2.AutoSize = False
+        Me.MenuStrip2.BackColor = System.Drawing.Color.Transparent
+        Me.MenuStrip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.stripMenu})
         Me.MenuStrip2.Location = New System.Drawing.Point(20, 60)
         Me.MenuStrip2.Name = "MenuStrip2"
@@ -135,30 +139,38 @@ Partial Class Form1
         Me.MenuStrip2.TabIndex = 4
         Me.MenuStrip2.Text = "MenuStrip2"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.OpaQBrowser.My.Resources.Resources.OpaQLogo2
+        Me.PictureBox1.Location = New System.Drawing.Point(114, 468)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(84, 27)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
         'buttonHome
         '
-        Me.buttonHome.Location = New System.Drawing.Point(63, 63)
+        Me.buttonHome.FlatAppearance.BorderSize = 0
+        Me.buttonHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.buttonHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.buttonHome.Image = Global.OpaQBrowser.My.Resources.Resources.home
+        Me.buttonHome.Location = New System.Drawing.Point(64, 57)
         Me.buttonHome.Name = "buttonHome"
-        Me.buttonHome.Size = New System.Drawing.Size(51, 35)
+        Me.buttonHome.Size = New System.Drawing.Size(40, 40)
         Me.buttonHome.TabIndex = 9
-        Me.buttonHome.Text = "Home"
         Me.buttonHome.UseVisualStyleBackColor = True
-        '
-        'buttonGo
-        '
-        Me.buttonGo.Location = New System.Drawing.Point(120, 64)
-        Me.buttonGo.Name = "buttonGo"
-        Me.buttonGo.Size = New System.Drawing.Size(57, 34)
-        Me.buttonGo.TabIndex = 12
-        Me.buttonGo.Text = "Go"
-        Me.buttonGo.UseVisualStyleBackColor = True
         '
         'buttonForward
         '
         Me.buttonForward.BackgroundImage = Global.OpaQBrowser.My.Resources.Resources.forward1
         Me.buttonForward.FlatAppearance.BorderSize = 0
+        Me.buttonForward.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.buttonForward.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.buttonForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonForward.Location = New System.Drawing.Point(975, 55)
+        Me.buttonForward.Location = New System.Drawing.Point(156, 57)
         Me.buttonForward.Name = "buttonForward"
         Me.buttonForward.Size = New System.Drawing.Size(40, 40)
         Me.buttonForward.TabIndex = 8
@@ -168,8 +180,10 @@ Partial Class Form1
         '
         Me.buttonBack.BackgroundImage = Global.OpaQBrowser.My.Resources.Resources.back1
         Me.buttonBack.FlatAppearance.BorderSize = 0
+        Me.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonBack.Location = New System.Drawing.Point(929, 55)
+        Me.buttonBack.Location = New System.Drawing.Point(110, 57)
         Me.buttonBack.Name = "buttonBack"
         Me.buttonBack.Size = New System.Drawing.Size(40, 40)
         Me.buttonBack.TabIndex = 7
@@ -180,7 +194,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1035, 512)
-        Me.Controls.Add(Me.buttonGo)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.theBrowser)
         Me.Controls.Add(Me.opacityBar)
         Me.Controls.Add(Me.buttonHome)
@@ -198,6 +212,7 @@ Partial Class Form1
         CType(Me.opacityBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -217,5 +232,5 @@ Partial Class Form1
     Friend WithEvents stripMenuExit As ToolStripMenuItem
     Friend WithEvents MenuStrip2 As MenuStrip
     Friend WithEvents buttonHome As Button
-    Friend WithEvents buttonGo As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
