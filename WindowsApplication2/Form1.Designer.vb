@@ -23,8 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
-        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
-        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
         Me.opacityBar = New System.Windows.Forms.TrackBar()
         Me.theBrowser = New System.Windows.Forms.WebBrowser()
         Me.addressBar = New System.Windows.Forms.TextBox()
@@ -35,58 +33,45 @@ Partial Class Form1
         Me.stripMenuHomepage_Reset = New System.Windows.Forms.ToolStripMenuItem()
         Me.stripMenuExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.buttonHome = New System.Windows.Forms.Button()
         Me.buttonForward = New System.Windows.Forms.Button()
         Me.buttonBack = New System.Windows.Forms.Button()
-        Me.StatusStrip1.SuspendLayout()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolStripStatusLabel1 = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         CType(Me.opacityBar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.StatusStrip1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'StatusStrip1
-        '
-        Me.StatusStrip1.BackColor = System.Drawing.Color.Transparent
-        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
-        Me.StatusStrip1.Location = New System.Drawing.Point(20, 470)
-        Me.StatusStrip1.Name = "StatusStrip1"
-        Me.StatusStrip1.Size = New System.Drawing.Size(995, 22)
-        Me.StatusStrip1.TabIndex = 5
-        Me.StatusStrip1.Text = "StatusStrip1"
-        '
-        'ToolStripStatusLabel1
-        '
-        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
-        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(94, 17)
-        Me.ToolStripStatusLabel1.Text = "OpaQ Proto v1.0"
         '
         'opacityBar
         '
+        Me.opacityBar.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.opacityBar.AutoSize = False
-        Me.opacityBar.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.opacityBar.Location = New System.Drawing.Point(20, 443)
+        Me.opacityBar.Location = New System.Drawing.Point(788, 459)
         Me.opacityBar.Maximum = 20
         Me.opacityBar.Name = "opacityBar"
-        Me.opacityBar.Size = New System.Drawing.Size(995, 27)
+        Me.opacityBar.Size = New System.Drawing.Size(170, 29)
         Me.opacityBar.TabIndex = 10
         Me.opacityBar.Value = 20
         '
         'theBrowser
         '
         Me.theBrowser.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.theBrowser.Location = New System.Drawing.Point(20, 121)
+        Me.theBrowser.Location = New System.Drawing.Point(0, 121)
         Me.theBrowser.MinimumSize = New System.Drawing.Size(20, 20)
         Me.theBrowser.Name = "theBrowser"
-        Me.theBrowser.Size = New System.Drawing.Size(995, 322)
+        Me.theBrowser.Size = New System.Drawing.Size(977, 332)
         Me.theBrowser.TabIndex = 11
         '
         'addressBar
         '
+        Me.addressBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.addressBar.Dock = System.Windows.Forms.DockStyle.Top
-        Me.addressBar.Location = New System.Drawing.Point(20, 101)
+        Me.addressBar.Location = New System.Drawing.Point(0, 101)
         Me.addressBar.Name = "addressBar"
-        Me.addressBar.Size = New System.Drawing.Size(995, 20)
+        Me.addressBar.Size = New System.Drawing.Size(977, 20)
         Me.addressBar.TabIndex = 6
         '
         'stripMenu
@@ -133,31 +118,21 @@ Partial Class Form1
         Me.MenuStrip2.BackColor = System.Drawing.Color.Transparent
         Me.MenuStrip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.stripMenu})
-        Me.MenuStrip2.Location = New System.Drawing.Point(20, 60)
+        Me.MenuStrip2.Location = New System.Drawing.Point(0, 60)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(995, 41)
+        Me.MenuStrip2.Size = New System.Drawing.Size(977, 41)
         Me.MenuStrip2.TabIndex = 4
         Me.MenuStrip2.Text = "MenuStrip2"
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = Global.OpaQBrowser.My.Resources.Resources.OpaQLogo2
-        Me.PictureBox1.Location = New System.Drawing.Point(114, 468)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(84, 27)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 12
-        Me.PictureBox1.TabStop = False
-        '
         'buttonHome
         '
+        Me.buttonHome.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.buttonHome.FlatAppearance.BorderSize = 0
         Me.buttonHome.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.buttonHome.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.buttonHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.buttonHome.Image = Global.OpaQBrowser.My.Resources.Resources.home
-        Me.buttonHome.Location = New System.Drawing.Point(64, 57)
+        Me.buttonHome.Location = New System.Drawing.Point(835, 57)
         Me.buttonHome.Name = "buttonHome"
         Me.buttonHome.Size = New System.Drawing.Size(40, 40)
         Me.buttonHome.TabIndex = 9
@@ -165,12 +140,13 @@ Partial Class Form1
         '
         'buttonForward
         '
+        Me.buttonForward.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.buttonForward.BackgroundImage = Global.OpaQBrowser.My.Resources.Resources.forward1
         Me.buttonForward.FlatAppearance.BorderSize = 0
         Me.buttonForward.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.buttonForward.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.buttonForward.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonForward.Location = New System.Drawing.Point(156, 57)
+        Me.buttonForward.Location = New System.Drawing.Point(927, 57)
         Me.buttonForward.Name = "buttonForward"
         Me.buttonForward.Size = New System.Drawing.Size(40, 40)
         Me.buttonForward.TabIndex = 8
@@ -178,22 +154,53 @@ Partial Class Form1
         '
         'buttonBack
         '
+        Me.buttonBack.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.buttonBack.BackgroundImage = Global.OpaQBrowser.My.Resources.Resources.back1
         Me.buttonBack.FlatAppearance.BorderSize = 0
         Me.buttonBack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.buttonBack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.buttonBack.Location = New System.Drawing.Point(110, 57)
+        Me.buttonBack.Location = New System.Drawing.Point(881, 57)
         Me.buttonBack.Name = "buttonBack"
         Me.buttonBack.Size = New System.Drawing.Size(40, 40)
         Me.buttonBack.TabIndex = 7
         Me.buttonBack.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = Global.OpaQBrowser.My.Resources.Resources.OpaQLogo2
+        Me.PictureBox1.Location = New System.Drawing.Point(95, 452)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(70, 27)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
+        'ToolStripStatusLabel1
+        '
+        Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
+        Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(94, 17)
+        Me.ToolStripStatusLabel1.Text = "OpaQ Proto v1.0"
+        '
+        'StatusStrip1
+        '
+        Me.StatusStrip1.BackColor = System.Drawing.Color.Transparent
+        Me.StatusStrip1.GripMargin = New System.Windows.Forms.Padding(0)
+        Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1})
+        Me.StatusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 453)
+        Me.StatusStrip1.Name = "StatusStrip1"
+        Me.StatusStrip1.Size = New System.Drawing.Size(977, 22)
+        Me.StatusStrip1.TabIndex = 5
+        Me.StatusStrip1.Text = "StatusStrip1"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1035, 512)
+        Me.ClientSize = New System.Drawing.Size(977, 490)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.theBrowser)
         Me.Controls.Add(Me.opacityBar)
@@ -205,20 +212,19 @@ Partial Class Form1
         Me.Controls.Add(Me.MenuStrip2)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
+        Me.Padding = New System.Windows.Forms.Padding(0, 60, 0, 15)
         Me.Tag = ""
         Me.Text = "OpaQ - The Opaque Browser"
-        Me.StatusStrip1.ResumeLayout(False)
-        Me.StatusStrip1.PerformLayout()
         CType(Me.opacityBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.StatusStrip1.ResumeLayout(False)
+        Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents StatusStrip1 As StatusStrip
-    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
     Friend WithEvents opacityBar As TrackBar
     Friend WithEvents buttonBack As Button
     Friend WithEvents buttonForward As Button
@@ -233,4 +239,6 @@ Partial Class Form1
     Friend WithEvents MenuStrip2 As MenuStrip
     Friend WithEvents buttonHome As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents ToolStripStatusLabel1 As ToolStripStatusLabel
+    Friend WithEvents StatusStrip1 As StatusStrip
 End Class

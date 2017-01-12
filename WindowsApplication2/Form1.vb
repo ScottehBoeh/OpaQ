@@ -1,5 +1,7 @@
 ﻿Public Class Form1
 
+    Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Short
+
     Private Sub opaqBrowser_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
@@ -68,6 +70,16 @@
         response = InputBox("Please Enter Home Page URL", "Webbrowser", My.Settings.Home)
         My.Settings.Home = response
         My.Settings.Save()
+
+    End Sub
+
+    Private Overloads Sub addressBar_KeyDown(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles addressBar.KeyDown
+
+        If e.KeyCode = Keys.Return Then
+
+            theBrowser.Navigate(addressBar.Text)
+
+        End If
 
     End Sub
 
